@@ -35,6 +35,9 @@
                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="uiButtonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rv1-TL-JLs"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aU8-90-mQz">
                                 <rect key="frame" x="112" y="282" width="204" height="30"/>
@@ -46,12 +49,18 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-zL-BHc">
                                 <rect key="frame" x="76" y="319" width="277" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="Third"/>
-                                    <segment title="Fourth"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="Purple"/>
+                                    <segment title="Teal"/>
+                                    <segment title="Sage?"/>
                                 </segments>
+                                <color key="tintColor" red="0.63363708750000003" green="0.81197410820000004" blue="0.77995345270000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="selectedSegmentTintColor" red="0.63363708750000003" green="0.81197410820000004" blue="0.77995345270000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="segmentControlColorChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="C4G-CV-ez6"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-eK-OHQ">
                                 <rect key="frame" x="95" y="804" width="145" height="34"/>
@@ -79,6 +88,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabelText" destination="UBD-09-QdV" id="FgO-0L-yr3"/>
+                        <outlet property="uiImageA" destination="yS4-oc-aST" id="LTU-6e-quI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
