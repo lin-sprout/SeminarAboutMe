@@ -16,7 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabelText: UILabel!
     
     
-
+    @IBOutlet weak var colorChanger: UISegmentedControl!
+    
+    @IBOutlet weak var uiButtonOutletA: UIButton!
+    
+    
+    @IBOutlet weak var uiButtonOutletB: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,17 +36,40 @@ class ViewController: UIViewController {
     }
     
     
+    
+    @IBAction func uiButtonB(_ sender: Any) {
+    }
+    
+    
     @IBAction func segmentControlColorChanger(_ sender: Any) {
         
-        //        switch segementControlColorChanger.selectedSegmentIndex
-       // {
+        switch colorChanger.selectedSegmentIndex
+        {
             
-       // case 0: outlet.text = ""
-        //case 1: outlet.text = ""
-        //case 2: outlet.text = ""
-        //default: outlet.text = ""
-            //figure out how to change bg color, don't use the .text
-        //}
+        case 0: colorChanger.backgroundColor = UIColor.systemYellow
+            uiButtonOutletA.tintColor = UIColor.systemRed
+            uiButtonOutletA.backgroundColor = UIColor.systemYellow
+            uiButtonOutletB.tintColor = UIColor.systemYellow
+            self.view.backgroundColor = UIColor.systemYellow
+            
+        case 1: self.view.backgroundColor = UIColor.systemPurple
+            uiButtonOutletA.backgroundColor = UIColor.systemYellow
+            uiButtonOutletB.backgroundColor = UIColor.systemYellow
+        case 2: self.view.backgroundColor = UIColor.systemTeal
+            uiButtonOutletA.tintColor = UIColor.systemPurple
+            uiButtonOutletB.tintColor = UIColor.systemPurple
+        case 3: self.view.backgroundColor = UIColor.systemIndigo
+            uiButtonOutletA.tintColor = UIColor.systemTeal
+            uiButtonOutletB.tintColor = UIColor.systemTeal
+        
+        default:
+            colorChanger.backgroundColor = UIColor.systemBlue
+            uiButtonOutletA.tintColor = UIColor.systemRed
+            uiButtonOutletB.tintColor = UIColor.systemRed
+            
+            //self.view.backgroundcolor
+            
+        }
     }
     
     
