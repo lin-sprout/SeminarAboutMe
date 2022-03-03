@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var uiButtonOutletB: UIButton!
     
+    var x = 0
+    
     
     
     override func viewDidLoad() {
@@ -32,7 +34,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func uiButtonA(_ sender: Any) {
+        
+        
         //uiImageA.image = UIImage(named: "placehold name2")
+    nameLabelText.text = "fun fact"
+        //to change back if or switch statement
+        //counter, declare new variable ex x  counter x+=1
+        switch x
+        {
+        case 0:
+            //uiImageA.image = UIImage(named: )
+            nameLabelText.text = "fun fact"
+            
+        case 1:
+            nameLabelText.text = "Lin"
+            
+        //case 2: nameLabelText.text = "fnu fact"
+            
+            
+        default:
+            nameLabelText.text = ""
+        }
+        print(x)
+        
+        x+=1
+        
+        if x == 2 {x=0}
     }
     
     
