@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yS4-oc-aST">
-                                <rect key="frame" x="114" y="44" width="200" height="150"/>
+                                <rect key="frame" x="76" y="44" width="277" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBD-09-QdV">
-                                <rect key="frame" x="114" y="249" width="200" height="25"/>
+                                <rect key="frame" x="114" y="291" width="200" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R5-md-ISm">
-                                <rect key="frame" x="195" y="198" width="86" height="39"/>
+                                <rect key="frame" x="194" y="244" width="86" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button"/>
@@ -36,22 +36,15 @@
                                     <action selector="uiButtonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rv1-TL-JLs"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aU8-90-mQz">
-                                <rect key="frame" x="112" y="282" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemTealColor"/>
-                                <color key="minimumTrackTintColor" systemColor="systemTealColor"/>
-                                <color key="maximumTrackTintColor" systemColor="systemPinkColor"/>
-                            </slider>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-zL-BHc">
-                                <rect key="frame" x="76" y="319" width="277" height="32"/>
+                                <rect key="frame" x="76" y="324" width="277" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <segments>
                                     <segment title="Yellow"/>
                                     <segment title="Purple"/>
                                     <segment title="Teal"/>
-                                    <segment title="Sage?"/>
+                                    <segment title="Indigo"/>
                                 </segments>
                                 <color key="tintColor" red="0.63363708750000003" green="0.81197410820000004" blue="0.77995345270000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="selectedSegmentTintColor" red="0.63363708750000003" green="0.81197410820000004" blue="0.77995345270000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -60,34 +53,34 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-T7-dmM">
-                                <rect key="frame" x="20" y="807" width="84" height="31"/>
+                                <rect key="frame" x="20" y="771" width="84" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button">
-                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
-                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
                                 <connections>
                                     <action selector="uiButtonB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Qv-LT-P5z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-xS-rJS">
-                                <rect key="frame" x="260" y="807" width="105" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-xS-rJS">
+                                <rect key="frame" x="173" y="807" width="235" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-eK-OHQ">
-                                <rect key="frame" x="112" y="804" width="145" height="34"/>
+                                <rect key="frame" x="20" y="805" width="145" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6NN-pd-Fss">
-                                <rect key="frame" x="132" y="202" width="49" height="31"/>
+                                <rect key="frame" x="130" y="244" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.59950441129999998" green="0.69577869560000005" blue="0.86078917980000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="switchControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="cua-Df-ly8"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -95,7 +88,10 @@
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                     </view>
                     <connections>
+                        <outlet property="buttonSwitchThing" destination="6NN-pd-Fss" id="VSf-8j-ywS"/>
                         <outlet property="colorChanger" destination="rFD-zL-BHc" id="2ZE-kK-93b"/>
+                        <outlet property="enterNameTxtField" destination="IQj-eK-OHQ" id="St4-VW-aMk"/>
+                        <outlet property="helloEnterName" destination="xGj-xS-rJS" id="s8N-PI-Drz"/>
                         <outlet property="nameLabelText" destination="UBD-09-QdV" id="FgO-0L-yr3"/>
                         <outlet property="uiButtonOutletA" destination="6R5-md-ISm" id="JrU-zC-Bm9"/>
                         <outlet property="uiButtonOutletB" destination="Lb1-T7-dmM" id="pu8-ut-muU"/>
@@ -111,14 +107,8 @@
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
