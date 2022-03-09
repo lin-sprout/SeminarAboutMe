@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBD-09-QdV">
-                                <rect key="frame" x="114" y="291" width="200" height="25"/>
+                                <rect key="frame" x="20" y="291" width="388" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -82,6 +82,13 @@
                                     <action selector="switchControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="cua-Df-ly8"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fee-hu-OEc">
+                                <rect key="frame" x="20" y="377" width="388" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96841138601303101" green="0.9237868332117054" blue="0.71169793997579511" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -91,6 +98,7 @@
                         <outlet property="buttonSwitchThing" destination="6NN-pd-Fss" id="VSf-8j-ywS"/>
                         <outlet property="colorChanger" destination="rFD-zL-BHc" id="2ZE-kK-93b"/>
                         <outlet property="enterNameTxtField" destination="IQj-eK-OHQ" id="St4-VW-aMk"/>
+                        <outlet property="funFactLabel" destination="fee-hu-OEc" id="D0b-TJ-ArA"/>
                         <outlet property="helloEnterName" destination="xGj-xS-rJS" id="s8N-PI-Drz"/>
                         <outlet property="nameLabelText" destination="UBD-09-QdV" id="FgO-0L-yr3"/>
                         <outlet property="uiButtonOutletA" destination="6R5-md-ISm" id="JrU-zC-Bm9"/>
